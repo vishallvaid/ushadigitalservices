@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Usha Digital Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .contact-info-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-light);
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Usha <span
+                        style="color: var(--secondary-color); margin-left: 5px;">Digital</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">☰</div>
+                <a href="contact.html" class="btn btn-primary">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section style="background: var(--primary-color); color: white; padding: 100px 0 60px; text-align: center;">
+            <div class="container">
+                <h1 style="font-size: 48px; margin-bottom: 20px;">Get In Touch</h1>
+                <p style="font-size: 18px; opacity: 0.9; max-width: 800px; margin: 0 auto;">Have a project in mind?
+                    Let's discuss how we can help your business grow.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section>
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px;">
+                    <!-- Contact Form -->
+                    <div style="background: white; padding: 40px; border-radius: 10px; box-shadow: var(--shadow);">
+                        <h2 style="margin-bottom: 30px;">Send Us a Message</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 12345 67890" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="How can we help you?"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div>
+                        <h2 style="margin-bottom: 30px;">Contact Information</h2>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📍</div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Our Office</h4>
+                                <p style="color: var(--text-light);">Usha Digital Services, Business Hub, Hapur, Uttar
+                                    Pradesh, India - 245101</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📧</div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Email Us</h4>
+                                <p style="color: var(--text-light);">vaidmize@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📞</div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Call Us</h4>
+                                <p style="color: var(--text-light);">+91 86793 43957</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">💬</div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">WhatsApp</h4>
+                                <p style="color: var(--text-light);">Direct support available for urgent queries.</p>
+                                <button onclick="openWhatsApp()" class="btn btn-outline"
+                                    style="margin-top: 10px; padding: 8px 15px;">Chat on WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 25px; display: block;">Usha
+                        <span style="color: var(--secondary-color);">Digital</span></a>
+                    <p>Usha Digital Services is a leading provider of professional digital solutions, helping businesses
+                        navigate the complexities of the digital landscape.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">AI Chatbots</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">CRM Automation</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="refund-policy.html">Refund & Cancellation</a></li>
+                        <li><a href="delivery-policy.html">Delivery Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Usha Digital Services – All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <span style="font-size: 24px;">💬</span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
